@@ -1,0 +1,276 @@
+docker save -o <image_name>
+docker load -i <image_name>
+drive -i <image_name>
+
+(nonly required once) mkpasswd -m sha-512
+
+short:
+mbosch@mbosch-laptop:~/PlusDrive$ git clone git@github.com:PlusAI/ansible.git
+mbosch@mbosch-laptop:~/PlusDrive$ cd ansible
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ code .
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git status
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git add -u
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git status
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git commit
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git log
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git push -f origin master:add_user_mbosch
+
+full:
+mbosch@mbosch-laptop:~/PlusDrive$ git clone git@github.com:PlusAI/ansible.git
+Cloning into 'ansible'...
+remote: Enumerating objects: 29449, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 29449 (delta 1), reused 7 (delta 1), pack-reused 29442
+Receiving objects: 100% (29449/29449), 5.25 MiB | 172.00 KiB/s, done.
+Resolving deltas: 100% (15682/15682), done.
+mbosch@mbosch-laptop:~/PlusDrive$ cd ansible
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ ls
+airflow_cn_master.yml  ec2-data1.yml                 mlflow.yml
+airflow_cn_works.yml   ec2_vm.yml                    modules
+airflow_f2h.yml        gateway.yml                   nexus3_repository.yml
+airflow_us_master.yml  group_vars                    prometheus.yml
+airflow_us_works.yml   hosts                         README.rst
+auth_servers.yml       host_vars                     requirements.txt
+aws_web_server1.yml    images                        roles
+bagdb_us.yml           imgsearch.yml                 selective_servers.yml
+bj-datacopy1.yml       Jenkinsfile                   superset.yml
+bj-docker.yml          jenkins_master.yml            sz-data2.yml
+clickhouse_keeper.yml  jenkins_slaves_drive_agx.yml  sz-datadev.yml
+clickhouse_proxy.yml   jenkins_slaves_l4e.yml        sz-kafka.yml
+clickhouse.yml         jenkins_slaves.yml            sz_nas.yml
+CODEOWNERS             jupyterhub.yml                sz_office.yml
+config_center.yml      just_users.yml                tractruck_cn_web_server.yml
+datacopy3.yml          labeling_us.yml               tractruck_plus_cn.yml
+data_pipeline.yml      labeling.yml                  tractruck_plus_us.yml
+distcc.yml             lint.sh                       trux_servers.yml
+dist.yml               minio.yml                     vault.yml
+dnsserver.yml          misc.yml                      vpn.yml
+docs                   mlflow_us.yml                 zookeeper.yml
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ code .
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   group_vars/all/plusai.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git add -u
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   group_vars/all/plusai.yml
+
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git commit
+[master 7d8597bd] add new user for Michael Bosch
+ 1 file changed, 3 insertions(+)
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git log
+commit 7d8597bd5f86849b1e2c48e2f8ae2f50d373dd03 (HEAD -> master)
+Author: boschmike <michael.bosch@plus.ai>
+Date:   Wed Apr 27 17:25:41 2022 +0200
+
+    add new user for Michael Bosch
+
+commit 5ecfb6ab57de2ea380be007ced8faf434e6c185d (origin/master, origin/HEAD)
+Author: DerrickZhao <39796179+DerrickZhao@users.noreply.github.com>
+Date:   Wed Apr 27 10:13:14 2022 +0800
+
+    Data1: derrick: add as sudoer, and update password (#3549)
+
+commit 581ba9793974ca434bf279256e30f8f4fa72b30c
+Author: amin-plus <104394660+amin-plus@users.noreply.github.com>
+Date:   Tue Apr 26 14:11:22 2022 -0700
+
+    Add user amin.tahmasbi (#3554)
+
+commit a3026af625b7ba8bb13c7b7e83c8beb62de1863d
+Author: PlusAI CI <plusai-ci@plus.ai>
+Date:   Tue Apr 26 10:47:23 2022 -0700
+
+    Automatic update for datavault release: 3820
+    
+    2e33a460 Automatic update for drive release: 8628 (#2986)
+
+commit fd8b3b414e9bb949a33c0abfa7840e9c3e36d6d8
+Author: plusai-ci <plusai-ci@plus.ai>
+Date:   Tue Apr 26 14:05:27 2022 +0800
+
+    Automatic update for crashvault release: 57 (#3551)
+    
+    ebfe69a Directing wsgi (server collecting cores) logs into file and configuring logrotate for them
+    
+    Co-authored-by: Denis Lagno <denis.lagno@plus.ai>
+
+commit fb0aa74b126a90ad304fadfa03e67f1e21b67516
+Author: Denis Lagno <denis.lagno@plus.ai>
+Date:   Mon Apr 25 20:40:50 2022 -0700
+
+    Revert "temp - remove crash setup to pass the deployment (#3548)"
+    
+    This reverts commit 61be4d6f785f1b09ae1a9e7b19396214fe965b3b.
+
+commit 7459ac95f0d7cb5fc5689d7382294efb47abeb2c
+Author: Denis Lagno <denis.lagno@plus.ai>
+Date:   Mon Apr 25 20:38:58 2022 -0700
+
+    employ crash_server_url and crash_saver_budget only if they are defined.
+    
+    Config values are kept intact otherwise
+
+commit 68be02bab119b0354d9916b65b0dd0d22d818776
+mbosch@mbosch-laptop:~/PlusDrive/ansible$ git push -f origin master:add_user_mbosch
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 619 bytes | 619.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'add_user_mbosch' on GitHub by visiting:
+remote:      https://github.com/PlusAI/ansible/pull/new/add_user_mbosch
+remote: 
+To github.com:PlusAI/ansible.git
+ * [new branch]        master -> add_user_mbosch
+
+repos
+data
+misc
+
+TODO: bagdb (Jayson Ross, need access to)
+
+byobu/tmux
+
+  837  cd drive/
+  838  ls
+  839  cd ui
+  840  ls
+  841  cd plus_view/scripts/
+  842  ls
+  843  exit
+  844  echo $ROS_PACKAGE_PATH
+  845  docker load -i l4-demo-145.image 
+  846  docker images
+  847  drive -- help
+  848  drive --help
+  849  cd ..
+  850  ls
+  851  clear
+  852  cd ..
+  853  ls
+  854  cd media/mbosch/Samsung_T5/
+  855  ls
+  856  cd mark/
+  857  ls
+  858  cd ~
+  859  ls
+  860  cd PlusDrive/
+  861  ls
+  862  git clone git@github.com:PlusAI/ansible.git
+  863  cd ansible
+  864  ls
+  865  code .
+  866  git status
+  867  git add -u
+  868  git status
+  869  git commit
+  870  git log
+  871  git push -f origin master:add_user_mbosch
+  872  cd /media/mbosch/film16/
+  873  ls
+  874  cd 2022-04-20
+  875  ls
+  876  rosbag info 20220420T133841_iveco-2_0.bag
+  877  rosbag info 20220420T133841_iveco-2_9.bag
+  878  rosbag info 20220420T133841_iveco-2_11.bag
+  879  cd ..
+  880  ls
+  881  cd 2022-04-27
+  882  ls
+  883  rosbag info 20220427T143404_iveco-2_13.bag
+  884  cd ../../..
+  885  cd ..
+  886  cd media/mbosch/film16/2022-04-20
+  887  ls
+  888  fastbag --help
+  889  fastbag convert --help
+  890  fastbag convert -i 20220420T133841_iveco-2_0.bag -o ~/PlusDrive/
+  891  cd /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db
+  892  cd ..
+  893  cd ../..
+  894  cd ~/PlusDrive/drive/ui/plus_view/scripts/
+  895  ls
+  896  ./run_plusview.py --help
+  897  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db --record
+  898  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db --record -n nikr
+  899  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db --record -n nike
+  900  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db --record -n navistar_nike
+  901  exit
+  902  docker load -i l4-demo-145.image 
+  903  drive
+  904  drive --help
+  905  drive --volume /media/mbosch/film16/:/media/mbosch/film16
+  906  docker images
+  907  docker tag --help
+  908  docker tag a68a7d6722a4 dist:5000/plusai-us-l4-demo-v1/drive:iveco
+  909  docker images
+  910  ls
+  911  mv 20220420T133841_iveco-2_0.db 20220420T133841_iveco-3_0.db\
+  912  lspci | grep N
+  913  lshw
+  914  lshw | grep N
+  915  lshw | grep N -a5 -b5
+  916  sudo apt-get update
+  917  mkpasswd -m sha-512
+  918  sudo apt install whois
+  919  mkpasswd -m sha-512
+  920  whoami
+  921  clear
+  922  ls
+  923  cd ..
+  924  ls
+  925  cd media/
+  926  ls
+  927  cd mbosch/
+  928  ls
+  929  cd Samsung_T5/
+  930  ls
+  931  cd mark/
+  932  ls
+  933  docker load -i l4-demo-145.image 
+  934  cd ../..
+  935  ls
+  936  cd ~
+  937  ls
+  938  cd PlusDrive/
+  939  ls
+  940  docker load -i iveco3_image_20220405.tar 
+  941  drive -i dist:5000/plusai-us-l4-demo-v1/drive:iveco
+  942  cd drive/
+  943  ls
+  944  cd ui/plus_view/scripts/
+  945  ls
+  946  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db
+  947  cd /opt/plusai/run/plusview/
+  948  ls
+  949  sudo cp launch_plusview_iveco-3.xml launch_plusview_iveco-2.xml
+  950  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db
+  951  cd -
+  952  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-2_0.db
+  953  ./run_plusview.py /home/mbosch/PlusDrive/20220420T133841_iveco-3_0.db
+  954  nvidia-smi 
+  955  lspci | grep N
+
+
+
+
+
+
+
+

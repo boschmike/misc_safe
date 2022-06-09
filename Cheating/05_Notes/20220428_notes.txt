@@ -1,0 +1,64 @@
+mbosch@mbosch-laptop:~/PlusDrive/drive$ sudo ./setup/setup-nvidia.sh 
+------------------------
+Installing nvidia-driver
+------------------------
+--2022-04-28 09:10:09--  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+Resolving developer.download.nvidia.com (developer.download.nvidia.com)... 152.195.19.142
+Connecting to developer.download.nvidia.com (developer.download.nvidia.com)|152.195.19.142|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 190 [application/octet-stream]
+Saving to: ‘cuda-ubuntu2004.pin’
+
+cuda-ubuntu2004.pin                                100%[===============================================================================================================>]     190  --.-KB/s    in 0s      
+
+2022-04-28 09:10:10 (6.92 MB/s) - ‘cuda-ubuntu2004.pin’ saved [190/190]
+
+Executing: /tmp/apt-key-gpghome.weQExq5TeG/gpg.1.sh --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+gpg: requesting key from 'https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub'
+gpg: key F60F4B3D7FA2AF80: "cudatools <cudatools@nvidia.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+Get:1 http://dist/dists/master/binary  InRelease [1,264 B]                                                                                                                                                
+Ign:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease                                                                                                               
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease                                                                                                                                                 
+Hit:4 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease                                                                                                                                     
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]                                                                                                                                 
+Hit:6 https://packages.microsoft.com/repos/ms-teams stable InRelease                                                                                                                                      
+Get:7 http://dist/dists/master/binary  Packages [1,061 kB]                                                                                                                                                
+Hit:8 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  Release                                                                                                                 
+Hit:9 https://nvidia.github.io/libnvidia-container/stable/ubuntu18.04/amd64  InRelease                                                                                                                    
+Hit:10 https://download.docker.com/linux/ubuntu focal InRelease                                                                                                                                           
+Get:12 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]                                                                                                            
+Hit:13 https://nvidia.github.io/nvidia-container-runtime/stable/ubuntu18.04/amd64  InRelease                                                                                                              
+Hit:15 https://nvidia.github.io/nvidia-docker/ubuntu18.04/amd64  InRelease                                                                                                                                
+Hit:16 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease                                                                                                                                       
+Get:18 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]                                                                                                                             
+Hit:11 https://packagecloud.io/github/git-lfs/ubuntu focal InRelease                                                                                                                       
+Hit:19 http://ppa.launchpad.net/system76-dev/stable/ubuntu focal InRelease                                       
+Hit:17 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease             
+Fetched 1,399 kB in 5s (294 kB/s)                                                          
+Reading package lists... Done
+Get:1 http://dist/dists/master/binary  InRelease [1,264 B]                                                                                                                                                
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease                                                                                                                                                 
+Ign:3 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease                                                                                                               
+Hit:4 https://packages.microsoft.com/repos/ms-teams stable InRelease                                                                                                                                      
+Hit:5 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease                                                                                       
+Get:6 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]                                                                                   
+Hit:7 https://download.docker.com/linux/ubuntu focal InRelease                                                                                                                                    
+Hit:8 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  Release                                                                                                         
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]                                                                                                  
+Hit:11 https://nvidia.github.io/libnvidia-container/stable/ubuntu18.04/amd64  InRelease                                                                                                                   
+Hit:13 https://nvidia.github.io/nvidia-container-runtime/stable/ubuntu18.04/amd64  InRelease                                                                                                              
+Hit:14 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease                                                                                                                                       
+Hit:15 https://nvidia.github.io/nvidia-docker/ubuntu18.04/amd64  InRelease                                                                                                                                
+Get:17 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]                                                                                                                             
+Hit:18 http://ppa.launchpad.net/system76-dev/stable/ubuntu focal InRelease                                                                           
+Hit:10 https://packagecloud.io/github/git-lfs/ubuntu focal InRelease            
+Hit:16 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease
+Fetched 337 kB in 4s (83.1 kB/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+cuda-drivers is already the newest version (510.47.03-1).
+0 upgraded, 0 newly installed, 0 to remove and 34 not upgraded.

@@ -1,0 +1,40 @@
+
+(do global git account configuration)
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+(edit url of a remote repo)
+git remote set-url origin git@github.com:boschmike/safe.git
+
+(view remote repos)
+git remote -v
+
+(replace example "origin" repo by example "origing_save" one)
+git remote add origin_safe git@github.com:boschmike/safe.git
+git remote remove origin
+
+(create new branch from existing)
+git checkout -b <new-branch> <dev-branch>
+(or)
+git branch <branch-name> (<dev-banch> is the currently checked out one)
+
+(change to specific branch)
+git checkout <branch-name>
+
+(do pull from master branch)
+git pull --rebase drive_upstream master 
+(or --merge instead of --rebase)
+
+(take existing PR, fetch branch to local (checkout) and build .deb)
+git fetch drive_upstream pull/<PR-ID>/head:<BRANCH_NAME>
+git checkout <BRANCH_NAME>
+make package
+
+(delete local branch)
+git branch -D <branch-name>
+
+(delete remote branch of local one, see above)
+git push --delete <remote name> <branch name>
+
+
+

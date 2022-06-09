@@ -1,0 +1,19 @@
+
+(list possible/available docker versions)
+sudo apt-cache madison docker-ce
+
+
+(solely run a docker container)
+sudo docker run -it --privileged --network host --ipc host -v /home/plus:/home/plus --env DISPLAY=unixDISPLAY -v $AUTH:/root/.Xauthority -v /tmp/.X11-unix:/tmp/.X11-unix -v /media:/media dist:5000/plusai-us-l4-demo-v1/drive:174 /bin/bash
+
+
+(load docker image via ssh from remote machine)
+docker save hello-world:latest | bzip2 | ssh plus@192.168.1.100 'sudo docker load'
+
+
+(rename docker image)
+docker tag 275d7140c225 dist:5000/plusai-us-l4-demo-v1/drive:iveco
+
+
+(run specific drive image)
+drive -i dist:5000/plusai-us-l4-demo-v1/drive:iveco

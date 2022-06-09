@@ -1,0 +1,9 @@
+
+(run_pointcloud_perception.py)
+python ./run_pointcloud_perception.py --bag /home/mbosch/data/bag/2022-05-10-iveco-3/20220510T101358_iveco-3_0.db (not running)
+python ./run_pointcloud_perception.py --bag /home/mbosch/data/bag/2022-05-05-paccar-p004sc/20220505T155449_paccar-p004sc_15_10to15.db (running)
+
+(run_unified_simulator.py)
+python ./run_unified_simulator.py /home/mbosch/data/bag/2022-05-05-paccar-p004sc/20220505T155449_paccar-p004sc_15_10to15.db (not running)
+python ./run_unified_simulator.py /home/mbosch/data/bag/2022-05-05-paccar-p004sc/20220505T155449_paccar-p004sc_15_10to15.db -w /home/mbosch/repos/drive -i --no-fusion_tracker_only (not running)
+python ./run_unified_simulator.py -w /home/mbosch/repos/drive -i --no-fusion_tracker_only /home/mbosch/data/bag/2022-05-05-paccar-p004sc/20220505T155449_paccar-p004sc_15_10to15.db (not running)

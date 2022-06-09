@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SignalProcessing_Butterworth_FilterValues_40_msec xmlns:xsi="http://www.w.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<CycleTime_msec>40</CycleTime_msec>
+<Numerators>
+<double>0.0002043225450204911404</double>
+<double>0.0014302578151434378745</double>
+<double>0.0042907734454303136234</double>
+<double>0.0071512890757171902398</double>
+<double>0.0071512890757171902398</double>
+<double>0.0042907734454303136234</double>
+<double>0.0014302578151434378745</double>
+<double>0.0002043225450204911404</double>
+</Numerators>
+<DeNumerators>
+<double>1.0000000000000000000000</double>
+<double>-3.7684946075980567670172</double>
+<double>6.5453978803004480013783</double>
+<double>-6.6298833997565687070619</double>
+<double>4.1860751325926432997449</double>
+<double>-1.6360015439708224249671</double>
+<double>0.3647053700432664191666</double>
+<double>-0.0356455458482863099534</double>
+</DeNumerators>
+</SignalProcessing_Butterworth_FilterValues_40_msec>

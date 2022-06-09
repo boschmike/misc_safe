@@ -1,0 +1,43 @@
+EHP/e-Horizon 			Electronic Horizon Provider
+SWI						Steering Wheel Interface
+ACM 					Air Conditioning Module
+VCM						Vehicle Control Module
+BCM						Body Control Module
+FCM 					Frame Control/Computer Module
+TPMS					Tire Pressure Meseurement System
+AEBS					Autonomous Emergency Braking System
+ACC						Adaptive Cruise Control
+ECAS					Electronically Controlles Air Suspension
+LDWS					Lane Departure Warning System
+IC						Instrument Cluster
+EM 						Expansion Module 									CAN to bodybuilder modules
+MC						Mirror Controller
+DTCO					Digital Tachograph CO
+EOBD					European ON Board Diagnistics
+EDC (17/MD1)			Electronic Diesel Control
+ADC						Allison Diagnostic Connector
+NIS						New Infotainment System
+P&CM
+FMS (Connector)
+TMR
+BSM						Bed Switch Module
+RLS						Rain Light Sensor
+WL						Window Lifter
+IMO						Immostation (Wegfahrsperre)
+IBS						Intelligent Battery Sensor
+HL						Headlamps
+AHW
+PC						Parking Cooler
+HT						Hi-Traction
+Retarder				=
+ETC						Electronic Transmission Control
+SGW						Secure GateWay
+EBS						Electronic Braking System
+Radio BT				=
+SS						Steering-Switches
+BBI						BodyBuilder Interface
+HDC						Hydrostatic Drive Control
+UTP						Universal Telematics Provider
+ASM						Automatic Suspension Module
+ACLC					Automatic Climate Control
+AHT						Additional Heater (air/water)

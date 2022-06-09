@@ -1,0 +1,1 @@
+https://de.mathworks.com/matlabcentral/answers/127594-construct-anonymous-function-that-returns-the-argmax-of-two-symbolic-variables

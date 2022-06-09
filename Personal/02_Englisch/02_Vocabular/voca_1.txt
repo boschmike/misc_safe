@@ -1,0 +1,65 @@
+ENGLISCH                GERMAN
+----------------------------------------------------------------------
+nitpick                 Spitzfindigkeit
+lint                    Fussel
+chunk                   Brocken/Stueck
+unified                 vereinheitlicht
+precipitation           Niederschlag
+to trap                 einfangen/gefangen nehmen
+tile                    Kachel/Fliese
+miscellaneous           sonstige
+utilities               Betriebsmittel
+eligibility             Auswahl/Berechtigung
+to retrieve             abfragen/wiederfinden
+registry                Register
+nudge                   Stoss/Schubser
+to prune                zurueckstutzen/beschneiden
+pillow                  Kissen
+huddle                  Durcheinander
+lattice                 Gitter
+exteroceptive           exterozeptiv (aussenwahrnehmend)
+agnostic                unabhaengig
+truncation/outliers     Ausreisser
+fidelity                Genauigkeit
+worthwhile              erstrebenswert
+asparagus               Spargel
+tentative		        vorlaeufig
+deprecated              veraltert
+exclamation (mark)      Ausrufezeichen
+colon                   Doppelpunkt
+to exploit              ausnutzen/ausbeuten
+booth                   Messestand
+to short out            kurzschliessen
+air conditioner         Klimaanlage
+suspicion               Verdacht
+suspicious              verdaechtig
+gracefull               elegant
+to vanish               verschwinden
+to hijack               kapern/abreisen
+faint                   schwach
+convenient              bequem/komfortabel
+jig                     Hilfsmittel/Werkzeug
+to sacrifice            aufopfern
+spatiotemporal          raum-zeitlich
+to lend itself for      sich eignen fuer
+precious                kostbar
+greedy                  gierig
+emphasis                Schwerpunkt
+to bear                 ertragen/aushalten
+pressing                dringend
+spurious                fadenscheinig/verdaechtig
+to bet                  wetten
+nifty                   raffiniert/geschickt
+to wobble               schwanken/wackeln
+congested		        ueberfuellt/verstopft
+supervisory board /     
+board of governors /
+governing body          Aufsichtsrat
+steering commitee /
+executive commitee / 
+managing board /
+board of managers       Vorstand
+booth                   Messestand
+vendor                  Verkaeufer/Lieferant
+fidelity                Genauigkeit
+pigtail                 Drahtende (Muffe/Steckverbinder)

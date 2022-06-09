@@ -1,0 +1,3 @@
+
+(snipping bag file)
+[docker] rosbag filter /media/rsingh/film39/2022-05-17/20220517T112214_iveco-3_2.bag /home/rsingh/2022-05-17/20220517T112214_iveco-3_2_90kph_ccw.bag "t.to_sec() >= 1652779757.0 and t.to_sec() <= 1652779880.0"
