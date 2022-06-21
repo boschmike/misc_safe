@@ -63,3 +63,4 @@ booth                   Messestand
 vendor                  Verkaeufer/Lieferant
 fidelity                Genauigkeit
 pigtail                 Drahtende (Muffe/Steckverbinder)
+c/o (care of)           in der Obhut von

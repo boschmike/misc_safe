@@ -1,0 +1,31 @@
+
+(set up pipenv)
+
+(install pipenv via pip)
+sudo pip install pipenv
+
+(install the python version you want to use)
+sudo apt-get install python3.8
+
+(set install python version to be used)
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.<old> 1
+sudo update-alternatives --config python3
+
+(go into specific folder where to put pipenv data)
+pipenv --python 3 
+
+(install required packages)
+pipenv install <pack1> ... (if no packages given, taking those listed in Pipfile, if existing)
+
+(create lock file)
+sudo pipenv lock --pre
+
+(install pipenv)
+pipenv install
+
+(e.g. go into installed pipenv)
+pipenv shell
+
+(e.g. exit pipenv)
+deactivate (in pipenv terminal)

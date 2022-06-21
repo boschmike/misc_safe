@@ -1,0 +1,6 @@
+
+verificate stereo cam calibration leak on endurance run
+- main problem is that cam position and orientation could change on the long term (firmness issue, e.g. due to many components/connections between cameras)
+- depth precision could decrease by time (or actually by calibration leak)
+- leak shall be verfiied due to the far range depth estimation capability of stereo cam (could be crucial compared to radar and lidar)
+- result could deliver possible optimization points which could be addressed on the mechanical side
