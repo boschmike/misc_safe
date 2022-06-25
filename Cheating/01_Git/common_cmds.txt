@@ -36,5 +36,10 @@ git branch -D <branch-name>
 (delete remote branch of local one, see above)
 git push --delete <remote name> <branch name>
 
+(load/checkout [different] file from other branch into current branch)
+git checkout <current_branch> -- <file_to_be_loaded>
 
+(megre branch into master)
+git checkout master
+git merge <other-branch>
 
