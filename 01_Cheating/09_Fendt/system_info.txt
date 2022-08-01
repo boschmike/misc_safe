@@ -1,0 +1,74 @@
+
+user@ubu20sdb:~$ sudo lshw -C display
+[sudo] password for user: 
+  *-display                 
+       description: VGA compatible controller
+       product: TU104 [GeForce RTX 2080 Rev. A]
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:01:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:173 memory:c2000000-c2ffffff memory:b0000000-bfffffff memory:c0000000-c1ffffff ioport:5000(size=128) memory:c0000-dffff
+
+
+user@ubu20sdb:~$ less /proc/cpuinfo
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 94
+model name      : Intel(R) Xeon(R) CPU E3-1275 v5 @ 3.60GHz
+stepping        : 3
+microcode       : 0xea
+cpu MHz         : 3600.000
+cache size      : 8192 KB
+physical id     : 0
+siblings        : 8
+core id         : 0
+cpu cores       : 4
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 22
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon 
+pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_t
+imer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep 
+bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags       : vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa itlb_multihit srbds
+bogomips        : 7200.00
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+
+
+user@ubu20sdb:~$ lscpu
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          8
+On-line CPU(s) list:             0-7
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           94
+Model name:                      Intel(R) Xeon(R) CPU E3-1275 v5 @ 3.60GHz
+Stepping:                        3
+CPU MHz:                         3772.690
+CPU max MHz:                     4000,0000
+CPU min MHz:                     800,0000
+BogoMIPS:                        7200.00
+Virtualization:                  VT-x
+L1d cache:                       128 KiB
+L1i cache:                       128 KiB
+L2 cache:                        1 MiB
+L3 cache:                        8 MiB

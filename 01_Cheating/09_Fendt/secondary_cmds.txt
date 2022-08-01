@@ -1,0 +1,31 @@
+
+
+get gpu name etc.:
+
+sudo lshw -C display
+hwinfo --gfxcard --short
+
+
+
+ros driver for ids camera:
+
+http://wiki.ros.org/ueye_cam
+
+
+
+diverse commands:
+
+pip3 list
+apt-cache search 'nvidia-driver-' | grep '^nvidia-driver-[[:digit:]]*'
+nvidia-smi
+sudo prime-select query
+sudo prime-select nvidia
+
+
+
+nvidia gpu driver installation(470 --> version):
+
+sudo apt install libnvidia-common-470
+sudo apt install libnvidia-gl-470
+sudo apt install nvidia-driver-470
+nvidia-smi

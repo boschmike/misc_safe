@@ -1,0 +1,281 @@
+TEMPLATE
+
+----------------------------------------------------------------------------------------------------------
+
+service:
+xyz
+
+name/nick/username:
+xyz
+
+email:
+xyz
+
+pwd:
+xyz
+
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+service:
+personal laptop
+
+name/nick/username:
+Michael Bosch
+
+email:
+-
+
+pwd:
+Ucan.tH4...y..
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+plusai (google)
+
+name/nick/username:
+Michael Bosch
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+AB3Rj3...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+github
+
+name/nick/username:
+boschmike
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+Ucan.tH4...y..
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+cisco anyconnect
+
+name/nick/username:
+mbosch
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+-
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+jira
+
+name/nick/username:
+Michael Bosch
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+Ucan.tH4...y..
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+microsoft
+
+name/nick/username:
+Michael Bosch
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+AB3Rj...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+iveco-2 truck
+
+name/nick/username:
+Plus    
+
+email:
+-
+
+pwd:
+KPramtzHf
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+iveco-3 truck
+
+name/nick/username:
+Plus    
+
+email:
+-
+
+pwd:
+KPPramtzHf
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+plus.ai backup codes
+
+SAVE YOUR BACKUP CODES
+Keep these backup codes somewhere safe but accessible.
+
+1. 4310 7964		 6. 9496 4900
+2. 0525 4555		 7. 5567 4367
+3. 7586 2835		 8. 3602 7007
+4. 3182 3862		 9. 4962 5256
+5. 0376 8711		10. 9642 0895
+
+(michael.bosch@plus.ai)
+
+* You can only use each backup code once.
+* Need more? Visit https://g.co/2sv
+* These codes were generated on: Apr 16, 2022.
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+ansible/jenkins
+
+name/nick/username:
+mbosch    
+
+email:
+-
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+bagdb
+
+name/nick/username:
+mbosch    
+
+email:
+-
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+ultimaker
+
+name/nick/username:
+boscmich    
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+researchgate   
+
+email:
+michael.bosch@emailn.de
+
+pwd:
+AB3R...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+vodafone mobile phone contract   
+
+email:
+michael.bosch@emailn.de
+
+pwd:
+bosche94
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+expedia   
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+Ucan_tH4CKmyPW
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+Paulaner Festzelt
+Winzerer Fähndl Pongratz GmbH
+
+email:
+michael.bosch@plus.ai
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+MeinVodafone-Login
+
+benutzername (und Mail):
+michael.bosch@emailn.de
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+Zenefits
+
+benutzername (und Mail):
+michael.bosch@emailn.de
+
+pwd:
+Ucan.tH...
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+PIN Vodafone SIM (Handy)
+
+benutzername (und Mail):
+michael.bosch@emailn.de
+
+pwd:
+7693
+
+-----------------------------------------------------------------------------------------------------------
+
+service:
+PaperCut Munich Office
+
+benutzername (und Mail):
+81-87652
+
+pwd:
+81-87652
+
+

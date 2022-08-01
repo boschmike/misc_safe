@@ -1,0 +1,21 @@
+
+(remove directory with parent files, should also work with files, but then not using r option)
+(sudo) rm -rf <directory_name>
+
+(dump stderr stream to stdout in order to save it in a file)
+2>&1
+
+(stdin encoding)
+0
+
+(stdout encoding)
+1
+
+(stderr encoding)
+2
+
+(select standard editor to be used when automatically open a text file)
+sudo update-alternatives --config editor
+
+(location where code executable lies at)
+/snap/code/101/usr/share/code/bin/code

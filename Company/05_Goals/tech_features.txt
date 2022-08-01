@@ -1,9 +1,0 @@
-
-enhance stereo camera range (idea triggered by martin zeilinger at balocco ws in june 2022):
-- trainable far-range matching including rain and fog scenarios (why probably doable: already existing solutions looking thru fog etc. AND solutions estimating depth based and solo monoimages)
-- could clearly outperform radar and lidar ranges which suffer from physical damping effects on sensor-target distance
-
-online estimate lateral vehicle dynamics parameter (state estimation), majorly for simplified vehicle models (like bicycle models)
-- estimate parameters (understeering gradient, roational inertia, steering gain etc.) online
-- apply parameters online in steering control (and longitudinal control, if required)
-(see MAN T&B, did masters thesis on this topic)

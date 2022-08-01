@@ -1,0 +1,97 @@
+
+(lspci to list all available/connected pci devices)
+lspci | grep N
+
+
+(lshw to list all availabel hardware devices)
+sudo lshw
+hwinfo --short
+
+
+(list all cou data)
+lscpu
+
+
+(attach external device)
+drive --volume /media/mbosch/film16/:/media/mbosch/film16
+
+
+(run fastbag plusview)
+cd ~/repos/drive/ui/plus_view/scripts/
+./run_plusview.py /home/mbosch/data/test/20220420T133841_iveco-3_0.db
+
+
+(convert bag to fastbag/bagdb, run in container/drive)
+fastbag convert -i 20220420T133841_iveco-2_0.bag -o ~/PlusDrive/
+
+
+(snip fastbag)
+fastbag snip -i ~/data/test/20220420T133841_iveco-3_0.db --start 1650454722 --end 1650454752 -O ~/data/test/20220420T133841_iveco-3_0_snip.db
+
+
+(fastbag info)
+fastbag info -i ~/data/test/20220420T133841_iveco-3_0.db
+
+
+(pull specific drive image)
+drive -i dist:5000/plusai-us-l4-demo-v1/drive:170 --pull
+
+
+(checkout 'new' remote branch)
+
+fetch the branch locally:
+
+git fetch origin <branchName>
+
+move to that branch:
+
+git checkout <branchName>
+
+
+(remove all exited docker containers)
+docker rm $(docker ps --filter status=exited -q)
+
+
+(shotdown machine in X mins from now)
+sudo shutdown -P +X
+
+
+(disassemble object file / executable --> see machine and assembler code)
+objdump -D <OBJ_FILE>
+
+
+(open image)
+eog 7cameras.png
+
+
+(acces truck machine via ssh)
+ssh -X plus@192.168.1.100
+
+
+(remove dir with its files)
+sudo rm -rf .git/
+
+
+(install python2 pipenv for lane_offline_metrics script)
+pipenv install --deploy --site-packages
+(in: /home/mbosch/repos/drive/perception/lane_detection/tools/simulator_metrics/python2_env)
+
+(activate pipenv)
+pipenv shell
+(in: /home/mbosch/repos/drive/perception/lane_detection/tools/simulator_metrics/python2_env)
+
+(i.e. run lane_offline_metrics.py)
+python lane_offline_metrics.py --bag_file /home/mbosch/data/bag/2022-06-07-iveco-2/20220607T082827_iveco-2_0_follow-to-stop-0.bag -s 0 -e 350 --align_to_first_frame=True
+(in: /home/mbosch/repos/drive/perception/lane_detection/tools/simulator_metrics)
+
+
+(list currently running LKM, loadable kernel module)
+lsmod
+
+
+(modify conky system monitor)
+sudo nano /etc/conky/conky.conf
+
+
+(find executable path of desired package)
+which <package_name> (like: conky, code, plusecho ...)

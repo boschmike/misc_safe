@@ -1,0 +1,66 @@
+USED --------------------------------------------------------------------------------------------------------------------------------
+
+
+vsc:
+
+  sudo snap install --classic code
+
+
+ifconfig:
+
+  sudo apt install net-tools
+
+
+ids-software-suite 4.94:
+  
+  install missing qt5 (and related)
+    sudo apt-get install libqt5gui5
+    sudo apt-get install qt5-default
+ 
+  
+nvidia gpu driver (via "software&update" and "additional drivers" in ubuntu gui):
+
+  select "Using NVIDIA Server Driver metapackage from nvidia-driver-450-server (prop)"
+
+
+NVIDIA CUDA Compiler (nvacc) install:
+
+  sudo apt install nvidia-cuda-toolkit
+  sudo pip3 install torch==1.8.1+cu101 torchvision==0.9.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
+
+python3 setup:
+
+  sudo apt install python3-pip
+  python3 -m pip install --upgrade pip 							(possibly not required)
+  sudo pip3 install numpy
+  sudo pip3 install matplotlib
+  sudo pip3 install open3d
+
+  sudo pip3 install scikit-build 								    (possibly not required)
+  sudo pip3 install opencv-contrib-python           (possibly not required)
+  sudo pip3 install opencv-python==4.1.2.30         (possibly not required)
+
+
+UNUSED (due to finally using ros noetic)--------------------------------------------------------------------------------------------
+
+
+ros melodic with python 3 support:
+
+  fix "unable to locate" error:
+  https://stackoverflow.com/questions/61460527/how-can-solve-the-ros-installation-error-on-ubuntu
+
+  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+  sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+  sudo apt update
+  apt install ros-melodic-desktop-full
+  apt install python3-pip python3-all-dev python3-rospkg
+  apt install ros-melodic-desktop-full --fix-missing
+
+
+python 3.8 upgrade:
+
+  https://tech.serhatteker.com/post/2019-12/upgrade-python38-on-ubuntu/
+
+
+END---------------------------------------------------------------------------------------------------------------------------------
